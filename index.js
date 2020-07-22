@@ -22,6 +22,9 @@ const common = require('./routes/common');
 app.use('/', common);
 
 const port = 3000;
+const document = require('./routes/document');
+
+app.use('/document', document);
 app.listen(port, () => {
     console.log(`Running on http://localhost:${port}`);
 });
