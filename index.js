@@ -21,6 +21,9 @@ app.use(function (req, res, next) {
 const common = require('./routes/common');
 app.use('/', common);
 
+const lineNotify = require('./routes/line-notify');
+app.use('/line-notify', lineNotify);
+
 const port = 3000;
 const document = require('./routes/document');
 
